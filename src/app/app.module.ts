@@ -9,17 +9,21 @@ import { AppComponent } from './app.component';
 import { contentHeaders } from './common/common.component';
 
 import { MedicationComponent } from './medication/medication.component';
+import { ShowdataComponent } from './showdata/showdata.component';
 
 const appRoutes: Routes = [
-  { path: '',       component: AppComponent  },
+  { path: 'app',       component: AppComponent  },
   { path: 'medication',       component: MedicationComponent },
+  { path: '',       component: ShowdataComponent },
+
 
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
-    MedicationComponent
+    MedicationComponent,
+    ShowdataComponent
     ],
   imports: [
     BrowserModule,

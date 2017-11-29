@@ -1,0 +1,17 @@
+<div class="showdata jumbotron center-block">
+  <h1>Prescription</h1>
+  <form role="form" for= "data" (submit)="showdata($event, username.value)">
+  <div class="form-group">
+    <label for="username">Username</label>
+    <input type="text" #username class="form-control" id="username" placeholder="Username">
+  </div>
+  <!-- <div class="form-group">
+    <label for="password">Password</label>
+    <input type="password" #password class="form-control" id="password" placeholder="Password">
+  </div> -->
+  <h2>Paracetamol is : {{paracetamol}}</h2>
+    <h2>Panadol is : {{panadol}}</h2>
+  <button type="submit" class="btn btn-default">Submit</button>
+    <a [routerLink]="['/medication']">Click here to put in prescription</a>
+</form>
+</div>
