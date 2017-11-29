@@ -16,7 +16,7 @@ export class MedicationComponent implements OnInit {
   let content = {"paracetamol":paracetamol,
                   "panadol":panadol};
   let body = JSON.stringify(content);
-  this.http.post('https://1ebsxlop:g0tjsgjzzzj36zko@smoke-16773.us-east-1.bonsaisearch.net/try/try'+username, body, { headers: contentHeaders })
+  this.http.post('https://1ebsxlop:g0tjsgjzzzj36zko@smoke-16773.us-east-1.bonsaisearch.net/try/try/'+username, body, { headers: contentHeaders })
     .subscribe(
       response => {
         localStorage.setItem('id_token', response.json().id_token);
