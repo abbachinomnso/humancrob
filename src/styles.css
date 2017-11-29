@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+#main-body {
+  width: 100%;
+  background-color: #EBF8FB;
+  padding: 20px;
+  border: 1px;
+  margin-left: 0px;
+  margin-right: 0px;
+}

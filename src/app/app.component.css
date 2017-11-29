@@ -1,0 +1,13 @@
+#header-container {
+  width:100%;
+  border:1px;
+  background-color: grey;
+  border-radius: 25px;
+  padding: 20px;
+  height: 200px;
+}
+
+#image {
+  width: 250px;
+  height: 150px;
+}
