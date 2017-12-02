@@ -10,12 +10,13 @@ import { contentHeaders } from './common/common.component';
 
 import { MedicationComponent } from './medication/medication.component';
 import { ShowdataComponent } from './showdata/showdata.component';
+import { EspparseComponent } from './espparse/espparse.component';
 
 const appRoutes: Routes = [
   { path: 'app',       component: AppComponent  },
   { path: 'medication',       component: MedicationComponent },
   { path: '',       component: ShowdataComponent },
-
+  { path: 'esp8266',       component: EspparseComponent },
 
 ];
 
@@ -23,7 +24,8 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     MedicationComponent,
-    ShowdataComponent
+    ShowdataComponent,
+    EspparseComponent
     ],
   imports: [
     BrowserModule,
